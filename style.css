@@ -7,30 +7,66 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
-body label {
+body form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 2em;
+}
+body form label {
+  font-family: "Courier New", Courier, monospace;
   font-weight: bold;
 }
-body input {
+body form input {
   border: none;
   font-size: 36px;
-  background-color: #F3F3F3;
+  background-color: #787272;
+  max-width: 60%;
 }
-body .pin_num {
+body form .input_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+body form .pin_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+body form .pin_div .pin_code {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+body form .pin_div .pin_code .pin_num {
   border: none;
   text-align: center;
-  width: 55px;
+  width: 45px;
   height: 48px;
   font-size: 36px;
   background-color: #F3F3F3;
+  background-color: #787272;
   margin-right: 5px;
 }
-body .pin_num:focus {
+body form .pin_div .pin_code .pin_num:focus {
   border: 1px solid black;
   outline: none;
 }
-body .pin_num::-webkit-outer-spin-button,
-body .pin_num::-webkit-inner-spin-button {
+body form .pin_div .pin_code .pin_num::-webkit-outer-spin-button,
+body form .pin_div .pin_code .pin_num::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+body form .pin_div .pin_code .pin_num::-moz-outer-spin-button,
+body form .pin_div .pin_code .pin_num::-moz-inner-spin-button {
+  -moz-appearance: none;
 }/*# sourceMappingURL=style.css.map */

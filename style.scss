@@ -10,30 +10,75 @@ body {
     justify-content: center;
     align-items: center;
     // background-color: blue;
-    label {
-        font-weight: bold;
-    }
-    input {
-        border: none;
-        font-size: 36px; 
-        background-color: #F3F3F3;
-    }
-    .pin_num {
-        border: none; 
-        text-align: center; 
-        width: 55px;
-        height:48px;
-        font-size: 36px; 
-        background-color: #F3F3F3;
-        margin-right:5px;
-    }
-    .pin_num:focus {
-        border: 1px solid black;
-        outline: none;
-    }
-    .pin_num::-webkit-outer-spin-button,
-    .pin_num::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
+    // background-color: rgb(2, 46, 2);
+    height: 100vh;
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // background-color: blue;
+        height: 100vh;
+        gap: 2em;
+        // width: 100%;
+        label {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+        input {
+            border: none;
+            font-size: 36px;
+            background-color: #787272;
+            // width: 100%;
+            max-width: 60%;
+        }
+        .input_div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1em;
+        }
+        .pin_div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1em;
+             // The Pin Number
+            .pin_code {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // gap: 2em;
+                gap: 1em;
+                // width: 100%;
+                // max-width: 70%;
+                .pin_num {
+                    border: none; 
+                    text-align: center; 
+                    width: 45px;
+                    height:48px;
+                    font-size: 36px; 
+                    background-color: #F3F3F3;
+                    background-color: #787272;
+                    margin-right:5px;
+                }
+                .pin_num:focus {
+                    border: 1px solid black;
+                    outline: none;
+                }
+                .pin_num::-webkit-outer-spin-button,
+                .pin_num::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+
+                .pin_num::-moz-outer-spin-button,
+                .pin_num::-moz-inner-spin-button {
+                    -moz-appearance: none;
+                }
+            }
+        }
     }
 }
