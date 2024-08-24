@@ -6,4 +6,4 @@
 
 Get the Pin inputs to automatically go to next input after a digit entered
 
-Make the form Responsive without Media Queries
+~Make the form Responsive without Media Queries~
