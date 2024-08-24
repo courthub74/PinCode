@@ -1,0 +1,39 @@
+* {
+    // background-color: black;
+    // color: white;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // background-color: blue;
+    label {
+        font-weight: bold;
+    }
+    input {
+        border: none;
+        font-size: 36px; 
+        background-color: #F3F3F3;
+    }
+    .pin_num {
+        border: none; 
+        text-align: center; 
+        width: 55px;
+        height:48px;
+        font-size: 36px; 
+        background-color: #F3F3F3;
+        margin-right:5px;
+    }
+    .pin_num:focus {
+        border: 1px solid black;
+        outline: none;
+    }
+    .pin_num::-webkit-outer-spin-button,
+    .pin_num::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
